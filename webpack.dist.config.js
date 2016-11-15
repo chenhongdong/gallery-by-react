@@ -55,8 +55,9 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }, {
-        test:'/\.scss/',
-        loader:'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
+        test:'/\.less$/',
+        //loader:'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!less-loader'
+        loader:'style!css!less'
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
