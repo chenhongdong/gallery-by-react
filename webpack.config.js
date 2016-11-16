@@ -48,8 +48,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'react-hot!babel-loader'
     }, {
-        test:'/\.less$/',
-        //loader:'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!less-loader'
+        test:/\.less$/,
         loader:'style!css!less'
     }, {
       test: /\.css$/,
